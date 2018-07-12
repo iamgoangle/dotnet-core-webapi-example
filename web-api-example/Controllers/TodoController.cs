@@ -35,5 +35,14 @@ namespace web_api_example.Controllers {
       }
       return item;
     }
+
+    // POST
+    [HttpPost]
+    public IActionResult Create (TodoItem item) {
+      _context.TodoItems.Add (item);
+      _context.SaveChanges ();
+
+      return CreatedAtRoute ("GetTodo", new TodoItem { Id = item.Id }, item);
+    }
   }
 }
