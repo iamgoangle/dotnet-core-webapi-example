@@ -12,17 +12,26 @@ This project using **in-memory database** for domonstration.
 
 ## API
 
+### GET Todo
+
 ```
 GET
 /api/todo
 /api/todo/{id}
 ```
 
+### POST new todo
+
 ```
 POST
 /api/todo
 ```
 
-## Reference
+![POST method](https://github.com/iamgoangle/dotnet-core-webapi-example/blob/master/web-api-example/README/Postman.png?raw=true)
 
-[https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-vsc?view=aspnetcore-2.1](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-vsc?view=aspnetcore-2.1)
+### Update existing todo
+
+```
+PUT
+/api/todo/{id}
+```
